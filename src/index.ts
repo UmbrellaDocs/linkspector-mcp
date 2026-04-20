@@ -114,7 +114,7 @@ server.registerTool(
     },
   },
   async ({ directory, config }) => {
-    const args = ["@umbrelladocs/linkspector", "check", "-q", "-s"];
+    const args = ["@umbrelladocs/linkspector", "check", "-s"];
 
     if (config) {
       args.push("-c", config);

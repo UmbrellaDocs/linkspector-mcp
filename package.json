@@ -11,6 +11,7 @@
   ],
   "scripts": {
     "build": "tsc && chmod 755 build/index.js",
+    "prepare": "npm run build",
     "start": "node build/index.js"
   },
   "keywords": [
@@ -29,8 +30,8 @@
     "url": "git+https://github.com/UmbrellaDocs/linkspector-mcp.git"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0",
-    "zod": "^3.22.4"
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^4.3.6"
   },
   "devDependencies": {
     "@types/node": "^22.0.0",
