@@ -1,0 +1,42 @@
+{
+  "name": "@umbrelladocs/linkspector-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Linkspector - check for broken hyperlinks in Markdown and AsciiDoc files",
+  "type": "module",
+  "bin": {
+    "linkspector-mcp": "./build/index.js"
+  },
+  "files": [
+    "build"
+  ],
+  "scripts": {
+    "build": "tsc && chmod 755 build/index.js",
+    "start": "node build/index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "linkspector",
+    "link-checker",
+    "broken-links",
+    "markdown",
+    "asciidoc"
+  ],
+  "author": "Gaurav Nelson",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UmbrellaDocs/linkspector-mcp.git"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.22.4"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
